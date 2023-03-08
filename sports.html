@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <!-- <scripr src="https://cdnjs.cloudflare.com/ajax/libs/jquery-json/2.6.0/jquery.json.min.js"></scripr> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    
+
+<style>
+  .error{
+    color: red;
+  }
+  
+</style>
+
+  </head>
+  <body class="" style="background-color: rgb(248, 246, 244);">
+
+    <h2 class="text-center text-danger mt-1 " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Genaral Patient Information</h2>
+
+    <div class="container " >
+      <div class="inner-body mt-5" style=" padding: 5px;">
+      
+        <div class="form ">
+         
+    <form class=" " style=" " autocomplete="off" id="form" action="" method="post">
+      <div class="form-row">
+
+        <div class="form-group col-md-6">
+          <label for="inputEmail4" class="h6  ">Name   </label>
+          <input type="text" class="form-control  " name="pname"   id="" placeholder="Enter yourname">
+          
+        </div>
+        <div class="form-group col-md-6">
+          <label for="" class="h6" >Fathername</label>
+          <input type="text" class="form-control " name="fname" id="" placeholder="Enter your Fathername">
+        </div>
+
+
+        <div class="form-group col-md-6  ">
+          <label for="inputPassword4" class="h6">Email</label>
+          <input type="email" class="form-control  " name="mail" id="" placeholder="Enter your mail">
+          
+        </div>
+
+        <div class="form-group col-md-6">
+          <label for="" class="h6">Mobileno</label>
+          <input type="text" class="form-control numeric_value " name="mobile" maxlength="10"  id="" placeholder="+91 7695893520">
+        </div> 
+
+
+        <div class="form-group col-md-6 gender_radio ">
+          <label for="" class="h6" >Gender</label> 
+          <br>
+          <input type="radio" id="" class=" " name="gender_mode" value="1">
+          <label for="">Male</label>
+        
+          <input type="radio" id="" class="" name="gender_mode" value="2">
+          <label for="">Female</label>
+        </div>
+
+  
+      <div class="form-row">
+
+        
+        </div>
+        <div class="form-group col-md-6  ">
+          <label for="" class="h6">Register date</label>
+          <input type="text" name="startdate" class="form-control " id="startDate" placeholder="">
+        
+        </div> 
+
+        <div class="form-group col-md-6 patient_mode">
+          <label for="" class=" h6 ">Are your regular patient?</label> 
+          <br>
+          <input type="radio" id="yes" class=" "  name="regular_mode" value="yes">
+          <label for="">Yes</label>
+          
+
+          <input type="radio" id="no" class=" "    name="regular_mode" value="no">
+          <label for="">No</label>
+          <input type="text" id="pid" disabled name="disinput" class="form-control  w-50" placeholder="Enter your id number"   >           
+        </div>
+
+        <div class="form-group col-md-6">
+          <label for="" class=" h6" >Do you want to meet Doctor? </label> 
+          <br>
+          <input type="radio" id="d1" class=""  name="meet" value="yes">
+          <label for="">Yes</label>
+          
+
+          <input type="radio" id="d2" class=""   name="meet" value="no">
+          <label for="">No</label>
+
+          <select name="" id="drop" name="select" class="form-control w-50" style="margin-left: 38%; margin-top: -7%; display: none; " >
+            <option value="">--Select here--</option>
+            <option value="lab testing">Lab test</option>
+            <option value="Scanning">Scanning</option>
+            <option value="Getting tablet">Getting tablet</option>
+            <option value="Monthly op">Monthly oP</option>
+          </select>
+
+          
+        </div>
+
+        <div class="form-group col-md-6 " >
+          <label for="" class="h6 ">Address</label>
+          <textarea type="textarea" class="form-control  " name="address" rows="3" id="" placeholder="Enter your Address.."></textarea>
+        </div>
+
+
+        <div class="form-group col-md-3 ">
+          
+          <select name="drop1" id=""  class="form-control w-100 mt-5 ">
+            <option value="">--Doctors Directory--</option>
+            <option value="cardio">cardio</option>
+            <option value="brain">brain</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+          </div>
+
+
+          <div class="form-group col-md-3 ">
+
+          <select name="drop2" id="" class="form-control w-100 mt-5  ">
+            <option value="">--Timing--</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+  
+           
+          </div>
+
+        
+      <div class="btn">
+        <button type="submit"  name="submit" class="btn btn-primary "  >SUBMIT</button>
+
+      </div>
+     
+    </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+  <script>
+  
+      function convertFormToJSON(form) {
+        const array = $(form).serializeArray(); // Encodes the set of form elements as an array of names and values.
+        const json = {};
+        $.each(array, function () {
+          json[this.name] = this.value || "";
+        });
+        return json;
+      }
+
+      $("#form").on("submit", function (e) {
+        e.preventDefault();
+        const form = $(e.target);
+        const json = convertFormToJSON(form);
+        console.log(json);
+      });
+    </script>
+
+
+  
+  <script src="sports.js"></script>
+</html>
